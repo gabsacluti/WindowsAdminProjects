@@ -1,8 +1,8 @@
 # Phase 1 — Installation and Networking
 
-[Project overview](../READme.md) · [Next: Active Directory](phase2.md)
+[Project overview](../README.md) · [Next: Active Directory](phase2.md)
 
-**Status:** Installation and connectivity work recorded as complete. The Windows client domain-join walkthrough remains to be documented separately.
+**Status:** Installation and connectivity work recorded as complete. The Windows client setup and domain-join walkthrough is documented in Phase 4.
 
 ## Step 1: Download the prerequisites
 

@@ -1,6 +1,6 @@
 # Phase 4 — Windows Client
 
-[Project overview](../READme.md) · [Previous: Users and Group Policy](phase3.md)
+[Project overview](../README.md) · [Previous: Users and Group Policy](phase3.md)
 
 **Status:** Complete for the documented client setup and verification scope. Networking, forward DNS resolution, domain membership, and existing domain-user evidence are recorded. Checks performed on 15 September 2026.
 
@@ -121,4 +121,4 @@ Phase 3 also records PC01 in `IT/Computers` and policy processing from DC01. See
 
 PC01 has the intended network settings, can reach DC01, resolves DC01's forward DNS name, and is joined to `InfiniteVoid.local`. The client setup procedure is now documented, with existing domain-session evidence linked. The DNS observation above remains explicit rather than being presented as repaired.
 
-Next: Phase 5 — additional Group Policy configuration and validation.
+This phase completes the documented scope of the archived project.

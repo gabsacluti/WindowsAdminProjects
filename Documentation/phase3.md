@@ -1,10 +1,10 @@
 # Phase 3 — User Administration and Initial Group Policy
 
-[Project overview](../READme.md) · [Previous: Active Directory](phase2.md)
+[Project overview](../README.md) · [Previous: Active Directory](phase2.md)
 
 **Status:** Complete. User and group administration, PC01 organization, effective domain policy, password reset acceptance/rejection, and test-account lockout are documented with evidence. Validation completed on 13 September 2026.
 
-This phase includes Group Policy work originally planned for Phase 5. Client testing assumes that the Windows 11 VM has already joined the domain; the join procedure still needs its own Phase 4 walkthrough.
+This phase includes Group Policy work from the original plan. Client testing assumes that the Windows 11 VM has already joined the domain; Phase 4 documents the reproduction procedure and verifies the existing client configuration.
 
 ## Step 1: Open Active Directory Users and Computers
 
@@ -286,4 +286,4 @@ The original container will be empty only if no other computer accounts remain t
 
 Phase 3 is complete for the documented scope: directory organization, users and groups, initial Group Policy, effective-policy verification, password reset testing, and observed account lockout. PC01's current name and OU are confirmed, and Alex's original expiration exception is recorded.
 
-Phase 4 will document the client rename, DNS setup, domain join, and authentication procedure. Additional client policies belong to Phase 5, file services to Phase 6, and automation to Phase 7.
+Phase 4 documents the client configuration and verification. Additional client policies, file services, and PowerShell automation were outside the scope of the archived project.

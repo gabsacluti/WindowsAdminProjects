@@ -1,6 +1,6 @@
 # Phase 2 — Active Directory Domain Services
 
-[Project overview](../READme.md) · [Previous: Installation and networking](phase1.md) · [Next: Users and Group Policy](phase3.md)
+[Project overview](../README.md) · [Previous: Installation and networking](phase1.md) · [Next: Users and Group Policy](phase3.md)
 
 **Status:** Domain controller deployment and initial verification recorded as complete.
 

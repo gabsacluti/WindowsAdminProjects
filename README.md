@@ -2,18 +2,17 @@
 
 A hands-on Windows Server homelab built using Oracle VirtualBox to practice administration in a simulated enterprise environment.
 
-The lab uses DC01 as the domain controller for `InfiniteVoid.local` and PC01 as a Windows 11 client. This project is in progress. The notes currently cover installation, Active Directory deployment, users and groups, and initial Group Policy configuration.
+The lab uses DC01 as the domain controller for `InfiniteVoid.local` and PC01 as a Windows 11 client. The project is archived at its current scope: the completed work and its evidence are documented in Phases 1–4. No further phases are planned.
 
 **Start here:** [Prerequisites](Documentation/Prerequisites.md) → [Phase 1](Documentation/phase1.md) → [Phase 2](Documentation/phase2.md) → [Phase 3](Documentation/phase3.md) → [Phase 4](Documentation/phase4.md)
 
 ## Contents
 
 * [Lab environment](#lab-environment)
-* [Documentation and roadmap](#documentation-and-roadmap)
+* [Completed work](#completed-work)
 * [Repository structure](#repository-structure)
-* [Skills practiced so far](#skills-practiced-so-far)
-* [Documentation gaps to resolve](#documentation-gaps-to-resolve)
-* [Future improvements](#future-improvements)
+* [Skills practiced](#skills-practiced)
+* [Scope and limitations](#scope-and-limitations)
 
 ## Lab Environment
 
@@ -32,9 +31,9 @@ The lab uses DC01 as the domain controller for `InfiniteVoid.local` and PC01 as 
 
 The Server 2025 download is confirmed by the saved Phase 1 screenshot and matches the prerequisites and Phase 2 notes.
 
-## Documentation and Roadmap
+## Completed Work
 
-Phases 1–4 are recorded as complete for their documented scopes. Phase 3 includes evidence of effective domain policy, password reset acceptance/rejection, and actual test-account lockout. Client setup and Group Policy work overlap phases, as noted below.
+Phases 1–4 are recorded as complete for their documented scopes. Phase 3 includes evidence of effective domain policy, password reset acceptance/rejection, and actual test-account lockout. Group Policy work spans the original phase plan, so the phases describe documented work rather than a strict build sequence.
 
 | Phase | Scope | Status / documentation |
 | --- | --- | --- |
@@ -42,11 +41,8 @@ Phases 1–4 are recorded as complete for their documented scopes. Phase 3 inclu
 | 2 | AD DS, domain controller promotion, and DNS installation | [Complete](Documentation/phase2.md) |
 | 3 | OUs, users, groups, and initial Group Policy validation | [Complete](Documentation/phase3.md) |
 | 4 | Client setup walkthrough, network/domain checks, and domain-session evidence | [Complete](Documentation/phase4.md) |
-| 5 | Additional Group Policy and validation | Planned |
-| 6 | Shared folders, share/NTFS permissions, and access testing | Planned |
-| 7 | PowerShell user and account automation | Planned |
 
-Client installation is covered in Phase 1, and Phase 3 already includes domain-user testing and PC01 organization. Phase 4 documents the rename and domain-join procedure for reproduction and verifies the existing client configuration. Phase 5 will build on the password and lockout settings with validation and planned wallpaper, Control Panel, USB storage, and Command Prompt restrictions.
+Client installation is covered in Phase 1. Phase 3 includes domain-user testing and PC01 organization. Phase 4 documents the rename and domain-join procedure for reproducing the setup and verifies the existing client configuration. These phases overlap in scope and are presented as a record of the work completed.
 
 Download resources are listed in [Prerequisites](Documentation/Prerequisites.md). Screenshots are stored by phase in [Screenshots](Screenshots/).
 
@@ -69,12 +65,12 @@ WindowsAdminProjects/
 │   ├── phase2/
 │   ├── phase3/
 │   └── phase4/
-└── READme.md
+└── README.md
 ```
 
 Windows installation ISOs are not included in this repository.
 
-## Skills Practiced So Far
+## Skills Practiced
 
 * Virtual machine setup and Windows networking
 * Windows Server installation and administration
@@ -85,18 +81,12 @@ Windows installation ISOs are not included in this repository.
 * PowerShell commands for Active Directory verification
 * Technical documentation and troubleshooting
 
-Shared folder administration, NTFS permissions, and reusable PowerShell automation remain learning objectives for later phases. The `Powershell/cmd1` file is currently empty; the existing verification commands are documented in Phase 3.
+The repository does not include shared-folder administration, NTFS permission testing, or reusable PowerShell automation. The `Powershell/cmd1` file is an empty placeholder; verification commands used in the lab are documented in Phase 3.
 
-## Documentation Gaps to Resolve
+## Scope and Limitations
 
-* Add VM hardware allocations and the NAT Network name and DHCP range to Phase 1.
+* Phase 1 does not record VM hardware allocations, the NAT Network name, or its DHCP range.
 * Phase 4 includes a reproduction guide; historical screenshots of the original client rename/join wizard are unavailable.
 * Phase 4 records successful forward DNS resolution, an initial timeout of unconfirmed cause, and an unavailable reverse lookup. It does not claim these DNS observations were repaired.
 
-## Future Improvements
-
-Potential additions after the core roadmap include DHCP, WSUS, WDS, AD CS, DFS, File Server Resource Manager, Microsoft Entra ID integration, and Microsoft Intune integration.
-
-## Purpose
-
-This project is intended for educational and portfolio purposes, with the goal of building practical Windows Server administration experience and documenting the implementation as it progresses.
+This repository is an educational record of the completed lab work. Its status does not imply that unlisted Windows Server features or future improvements have been implemented.

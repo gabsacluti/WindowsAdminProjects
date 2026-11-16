@@ -1,6 +1,6 @@
 # Prerequisites
 
-[Project overview](../READme.md) · [Next: Installation and networking](phase1.md)
+[Project overview](../README.md) · [Next: Installation and networking](phase1.md)
 
 Download the following resources before beginning Phase 1:
 
