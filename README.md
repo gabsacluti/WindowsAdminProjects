@@ -58,8 +58,6 @@ WindowsAdminProjects/
 │   ├── phase2.md
 │   ├── phase3.md
 │   └── phase4.md
-├── Powershell/
-│   └── cmd1                 # Empty placeholder
 ├── Screenshots/
 │   ├── phase1/
 │   ├── phase2/
@@ -81,7 +79,7 @@ Windows installation ISOs are not included in this repository.
 * PowerShell commands for Active Directory verification
 * Technical documentation and troubleshooting
 
-The repository does not include shared-folder administration, NTFS permission testing, or reusable PowerShell automation. The `Powershell/cmd1` file is an empty placeholder; verification commands used in the lab are documented in Phase 3.
+The repository does not include shared-folder administration, NTFS permission testing, or reusable PowerShell automation. Verification commands used in the lab are documented in Phase 3.
 
 ## Scope and Limitations
 
